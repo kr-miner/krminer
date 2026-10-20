@@ -1,0 +1,17 @@
+KRminer License
+
+Copyright (c) 2026 the KRminer author. All rights reserved.
+
+You may use KRminer to mine on hardware you own or are authorized to use.
+Without written permission you may not modify, reverse engineer, decompile or
+disassemble it (including its embedded GPU kernels), or redistribute,
+sublicense or sell it.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
+
+Third-party components keep their own licenses: parts of KRminer come from
+Quantus-Network/quantus-miner (Apache License 2.0, see
+third-party/quantus-miner.LICENSE). The bundled cudarc loader keeps its
+MIT/Apache licenses.
