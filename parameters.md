@@ -10,12 +10,17 @@ krminer pool -a pearl -o stratum+tcp://prl.kryptex.network:7048 -u WALLET.WORKER
 
 | Parameter | Example | Default |
 |---|---|---|
-| `-a`, `--algo` | `-a pearl` | `quantus` |
+| `-a`, `--algo` | `-a quantus`, `-a pearl`, `-a noid` | `quantus` |
 | `-o`, `--url` | `-o stratum+tcp://prl.kryptex.network:7048` | |
 | `-u`, `--user` | `-u WALLET.WORKER` | |
 | `-p`, `--pass` | `-p x` | `x` |
 | `--no-strict-ssl` | `--no-strict-ssl` | check, warn if untrusted |
 | `--pearl-stratum` | `--pearl-stratum v1` | `auto` |
+
+Parano1d uses `-a noid` (aliases `parano1d`, `poseidon2b`) with an `o1ADDRESS.WORKER`
+login. Suprnova endpoints are `stratum+tcp://noid.suprnova.cc:3337` and
+`stratum+ssl://noid.suprnova.cc:3341`. Pool mining and `benchmark` on NVIDIA are supported;
+CPU, WGPU and local-node modes are unavailable for NOID. `--pearl-stratum` applies only to Pearl.
 
 ## GPU
 
