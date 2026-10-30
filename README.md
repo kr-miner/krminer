@@ -49,7 +49,7 @@ The dev fee is 2% of mining time (120 s every 100 min) on a separate connection;
 
 | GPU | Core MHz | Rate | GPU W | MH/s per W | Build |
 |---|---:|---:|---:|---:|---|
-| RTX 4070 Ti `sm_89` | 2550 | **89.7 MH/s** | 172 | 0.52 | 1.0.47 |
+| RTX 4070 Ti `sm_89` | 2550 | **96.2 MH/s** | 169 | 0.57 | 1.0.48 |
 
 ## Download
 
