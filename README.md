@@ -60,7 +60,7 @@ The current version and its checksums are on **[krminer.com](https://krminer.com
 |---|---|
 | `krminer-<version>.tar.gz` | HiveOS custom miner (flight sheet installation URL) |
 | `krminer-<version>-linux.tar.gz` | Linux x86_64: Ubuntu, RaveOS, mmpOS, minerstat custom miner |
-| `krminer-<version>-win64.zip` | Windows 10 or 11, x64 (`start_quantus.bat`, `start_pearl.bat`) |
+| `krminer-<version>-win64.zip` | Windows 10 or 11, x64 (`start_quantus.bat`, `start_pearl.bat`, `start_noid.bat`) |
 | `SHA256SUMS` | SHA-256 checksums of the three archives |
 
 The HiveOS package of each version is also attached to the
@@ -86,8 +86,8 @@ cd krminer-<version>-linux
 
 ### Windows
 
-Unzip `krminer-<version>-win64.zip`, replace WALLET and WORKER in `start_quantus.bat` or `start_pearl.bat` and run
-it, or run `krminer.exe` with the same options as on Linux.
+Unzip `krminer-<version>-win64.zip`, replace WALLET and WORKER in `start_quantus.bat`, `start_pearl.bat` or
+`start_noid.bat` and run it, or run `krminer.exe` with the same options as on Linux.
 
 ### HiveOS
 
