@@ -39,6 +39,11 @@ CPU, WGPU and local-node modes are unavailable for NOID. `--pearl-stratum` appli
 | `--gpu-memory-offset` | `--gpu-memory-offset -2000` | unchanged |
 | `--gpu-power-limit` | `--gpu-power-limit 150,_,140` | unchanged |
 
+The previous values come back when the miner exits. A small helper the miner
+starts for itself, `krminer gpu-guard`, puts them back even when the miner is
+killed or crashes, and logs that to `krminer-gpu-guard.log` in the temporary
+directory.
+
 ## Output
 
 | Parameter | Example | Default |

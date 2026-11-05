@@ -35,6 +35,8 @@ The dev fee is 2% of mining time (120 s every 100 min) on a separate connection;
 | RTX 5060 Ti `sm_120` | 2692 | **409 MH/s** | 99 | 4.1 | 1.0.40 |
 | RTX 3070 `sm_86` | 1500 | **290 MH/s** | 103 | 2.8 | 1.0.35 |
 
+1.0.52 runs compiler-built kernels on every GPU; expect about 25 % less than these rates until the table is re-measured.
+
 **Pearl** (`-a pearl`)
 
 | GPU | Core MHz | Rate | GPU W | TH/s per W | Build |
