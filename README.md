@@ -1,7 +1,7 @@
 # KRminer
 
 GPU miner for Quantus (QTC), Pearl (PRL) and Parano1d (NOID) on NVIDIA RTX 30, 40 and 50 series. Linux x86_64 and HiveOS.
-Dev fee 2%.
+Dev fee 1%.
 
 **Website and downloads: [krminer.com](https://krminer.com)**
 
@@ -11,11 +11,11 @@ Dev fee 2%.
 
 | Coin | Algorithm | Option | Devices | Dev fee |
 |---|---|---|---|---:|
-| Quantus Network (QTC) | Poseidon2 | `-a quantus` (default) | NVIDIA | 2.00% |
-| Pearl (PRL) | pearlhash | `-a pearl` | NVIDIA | 2.00% |
-| Parano1d (NOID) | Poseidon2b | `-a noid` | NVIDIA | 2.00% |
+| Quantus Network (QTC) | Poseidon2 | `-a quantus` (default) | NVIDIA | 1.00% |
+| Pearl (PRL) | pearlhash | `-a pearl` | NVIDIA | 1.00% |
+| Parano1d (NOID) | Poseidon2b | `-a noid` | NVIDIA | 1.00% |
 
-The dev fee is 2% of mining time (120 s every 100 min) on a separate connection; your pool session stays open.
+The dev fee targets 1% of mining time (120 s per 200 min). Your pool connection stays open. Once a switch is due and both pools have work, the miner switches after submitting a share to the current pool; it waits at most 120 s more for that share on the developer pool. Extra time on the developer pool postpones the next fee window.
 
 ### Supported GPUs
 
