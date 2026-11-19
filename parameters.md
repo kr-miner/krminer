@@ -35,9 +35,13 @@ CPU, WGPU and local-node modes are unavailable for NOID. `--pearl-stratum` appli
 |---|---|---|
 | `--gpu-core-clock` | `--gpu-core-clock 2460` | unchanged |
 | `--gpu-core-offset` | `--gpu-core-offset 200` | unchanged |
-| `--gpu-memory-clock` | `--gpu-memory-clock 810` | unchanged |
+| `--gpu-memory-clock` | `--gpu-memory-clock 405` | unchanged |
 | `--gpu-memory-offset` | `--gpu-memory-offset -2000` | unchanged |
 | `--gpu-power-limit` | `--gpu-power-limit 150,_,140` | unchanged |
+
+`--gpu-memory-clock 405` holds 405 MHz under load on Linux (run as root, RTX 30 and 40 series,
+NVIDIA driver 595 or newer): krminer also sets the driver's P5 memory entry to 405 MHz and puts
+it back on exit. Elsewhere it locks 810 MHz and logs why.
 
 The previous values come back when the miner exits. A small helper the miner
 starts for itself, `krminer gpu-guard`, puts them back even when the miner is
